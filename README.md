@@ -4,7 +4,7 @@
 
 ## Decription
 
-This data...
+This data is a backend heavy ecommerce store and it was built to help employers go through, update, and delete information in databases. For this assignment I had to add on the
 
 ## Table of Contents:
 
