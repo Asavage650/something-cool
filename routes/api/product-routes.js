@@ -2,11 +2,9 @@ const router = require("express").Router();
 const { json } = require("sequelize");
 const { Product, Category, Tag, ProductTag } = require("../../models");
 
-// The `/api/products` endpoint
-
 router.get("/", (req, res) => {
   Product.findAll({
-    attributes: ["id", "product_name", "price", "stock", "catagory_id"],
+    attributes: ["id", "product_name", "price", "stock", "category_id"],
     include: [
       {
         model: Category,
@@ -114,7 +112,7 @@ router.put("/:id", (req, res) => {
     })
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
-      // console.log(err);
+      console.log(err);
       res.status(400).json(err);
     });
 });
