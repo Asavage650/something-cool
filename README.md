@@ -21,7 +21,7 @@ to run this code users need to install node, mysql2, and sequelize for this appl
 
 ## Usage
 
-This can be used bla bla bla...
+This can be used to create and maintain product like data bases. So essentially this can be used for any retail buisness to keep track of products by categories or tags.
 
 ## License
 
